@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div>
+		在用户注册， 在线报名等场合时，
+		需要把用户的信息，填写并提交，这时要用到表单来收集用户信息 <br />
+	</div>
+	<form action="http://www.google.com" method="post">
+		<p>
+			用户名： <input type="text" name="username" />
+		</p>
+		<p>
+			密码：　<input type="password" name="password"/>
+		</p>
+		<p>
+			性别：　Male: <input type="radio" name="gender" value="Male"/>
+				Female: <input type="radio" name="gender" value="Female"/>
+		</p>
+		<p>
+			爱好： 篮球 <input type="checkbox" name="hobby" value="篮球" />
+				 足球 <input type="checkbox" name="hobby" value="足球" />
+				 台球 <input type="checkbox" name="hobby" value="台球" />
+		</p>
+		<p>
+			<select name="学历">
+				<option value="大学">大学</option>
+				<option value="高中">高中</option>
+				<option value="初中">初中</option>
+			</select>
+		</p>
+		<p>
+			<textarea name="intro"></textarea>
+		</p>
+		<p>
+			上传头像： <input type="file" name="pic" />
+		</p>
+		<p>
+			隐藏域：　IP<input type="hidden" name="ip" value="192.168.1.100" />
+		</p>
+		<P>
+			<input type="submit" value="Submit">
+		</P>
+	</form>
+</body>
+</html>
