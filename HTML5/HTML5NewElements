@@ -43,3 +43,17 @@ command: 可以定义用户可能调用的命令 (比如单选按钮， 复选�
 使用 ul 代替 dir
 使用 pre 代替 listing
 
+
+HTML5 新增input输入类型
+
+email 定义用于 email 地址的字段
+url 定义用于输入 URL 的字段
+number 定义用于输入数字的字段
+range 定义用于精确值不重要的输入数字的控件
+Date Pickers (date, month, year, week, time, datetime (UTC时区），datetime-local （不带时区）
+search 定义用于输入搜索字符串的文本字段
+tel 定义用于输入电话号码的字段
+color 定义拾色器
+
+
+
