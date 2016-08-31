@@ -56,4 +56,19 @@ tel 定义用于输入电话号码的字段
 color 定义拾色器
 
 
+HTML5 新增input属性
+
+autocomplete 规定 <input> 元素输入字段是否应该启用自动完成功能。   on/off
+autofocus 规定当页面加载时 <input> 元素应该自动获得焦点    
+form 规定 <input> 元素所属的一个或多个表单 
+        formaction: 规定当表单提交时处理输入控件的文件的URL
+        formenctype: 规定当表单数据提交到服务器时如何编码
+        formmethod: 定义发送表单数据到 action URL 的 HTTP 方法
+        formnovalidata: formnovalidate 属性覆盖 <form> 元素的 novalidate 属性
+        fortmarget: 规定表示提交表单后在哪里显示接收到相应的名称或关键词
+        除了formnovalidate属性， 其它属性都是只针对 type="submit" 和 type="image"
+        
+height and width: 规定 <input> 元素的高度和宽度。 （只针对type="image"）
+
+
 
