@@ -69,6 +69,12 @@ form 规定 <input> 元素所属的一个或多个表单
         除了formnovalidate属性， 其它属性都是只针对 type="submit" 和 type="image"
         
 height and width: 规定 <input> 元素的高度和宽度。 （只针对type="image"）
+list: 属性引用 <datalist> 元素， 其中包含 <input> 元素的预定义选项
+min, max, step: min 可输入最小值， max 可输入最大值， step 为输入框规定合法数字间隔
+multiple: 允许用户输入到 <input> 元素的多个值
+pattern: 规定用于验证 <input> 元素的值的正则表达式
+placeholder:规定可描述输入 <input> 字段预期值的简短的提示信息。
+required: 规定必须在提交表单之前填写输入字段。
 
 
 
