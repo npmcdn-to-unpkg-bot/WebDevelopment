@@ -106,18 +106,88 @@
 	console.log(Number({a:1}));  //NaN
 	console.log(Number([1, 2, 3]));  //NaN
 
-	Number(obj) 
+/*	Number(obj) 
 	// is equal to
 	if(typeof obj.valueOf() === 'object'){
 		Number(obj.toString());
 	} else {
 		Number(obj.valueOf());
 	}
-
+*/
 
 	//String()
+	console.log(String(123)); // "123"
+	console.log(String('abc'));  //"abc"
+	console.log(String(true));   // "true"
+	console.log(String(undefined));  //"undefined"
+	console.log(String(null));		//"null"
+ 	
+ 	console.log(String({a:1})); //"[object Object]"
+ 	console.log(String([1, 2, 3]));   //"1, 2, 3"
 
-	
+/* 	String({a:1})
+ 	//is equal to
+ 	String({a:1}.toString())*/
+
+ 	//Boolean()
+
+ 	console.log(Boolean(undefined)); //false
+ 	console.log(Boolean(null)); //false
+ 	console.log(Boolean(0));  //false
+ 	console.log(Boolean(NaN)); //false
+ 	console.log(Boolean('')); //false 
+	console.log(Boolean(false)); //false
+
+
+ 	console.log(Boolean({})); //true
+ 	console.log(Boolean([])); //true
+
+ 	//auto to String
+
+ 	console.log(123 + 'abc'); //"123abc"
+
+ 	if('abc'){  //true
+ 		console.log('hello'); //"hello"
+ 	}
+
+ 	console.log(+{foo: 'bar'}); //NaN
+ 	console.log(-[1, 2, 3]); //NaN
+
+ 	if( !undefined && !null && !0 && !NaN && !''){
+ 		console.log('true');
+ 	}
+
+ 	console.log('5' + 1) // '51'
+	console.log('5' + true) // "5true"
+	console.log('5' + false) // "5false"
+	console.log('5' + {}) // "5[object Object]"
+	console.log('5' + []) // "5"
+	console.log('5' + function (){}) // "5function (){}"
+	console.log('5' + undefined) // "5undefined"
+	console.log('5' + null) // "5null"
+
+	var obj = {
+		width: '100'
+	}
+	console.log(obj.width+ 20) //"10020"
+	console.log(Number(obj.width) + 20) //120
+
+
+	//auto to numbers
+
+	console.log('5' - '2')  //3
+	console.log('5' * '2')  //10
+	console.log(true - 1) //0
+	console.log(false - 1) // -1
+	console.log('1' - 1) //0
+	console.log('5' * []) //0
+	console.log(false / '5') // 0
+	console.log('abc' - 1) // NaN
+
+	console.log(+'abc') //NaN
+	console.log(-'abc')  //NaN
+	console.log(+true) // 1
+	console.log(-false) // 0
  
 	</script>
 </head>
