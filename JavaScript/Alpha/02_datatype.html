@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>datatype</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		
+	console.log(typeof 123);  //number
+	console.log(typeof '123'); //string
+	console.log(typeof false); //boolean
+
+	function f(){
+
+	}
+
+	console.log(typeof f); //function
+	console.log(typeof undefined); // undefined
+
+	//v  //ReferenceError: v is not defined 
+
+	console.log(typeof v); 
+
+
+	console.log(typeof window); //object
+	console.log(typeof {});   //object
+	console.log(typeof []);  //object
+	console.log(typeof null); //object
+
+	var o = {};
+	var a = [];
+
+	console.log(o instanceof Array); //false
+	console.log(a instanceof Array); //true
+
+	// null and undefined
+
+	if(!undefined){
+		console.log('undefined is false'); 
+	}
+
+	if(!null){
+		console.log('null is false');
+	}
+
+	console.log(undefined == null);
+
+	console.log(Number(null));  // 0
+	console.log(5+null);   //5
+
+	console.log(Number(undefined));  // NaN
+	console.log(5+undefined);   //NaN
+
+
+	//return undefined
+/*	var i;
+	i 
+
+	function f(x){
+	  return x;
+	}
+	f();
+
+	var o = new Object();
+	o.p
+
+	function f() {}
+	f()
+*/
+	
+	//boolean
+
+	if(''){   //false
+		console.log(true);
+	}
+
+	if([]) {  //true
+		console.log(true);
+	}
+
+	if({}) {  //true
+		console.log(true);
+	}
+
+	//auto switch data type
+	console.log('4' - '3');  //1
+
+	console.log(Number(324));  //324
+	console.log(Number('324')); // 324
+	console.log(Number('324abs'));  //NaN
+
+	console.log(Number('')); //0
+
+	console.log(Number(true)); //1
+	console.log(Number(false)); //0
+
+	console.log(Number(undefined)); //NaN
+
+	console.log(Number(null));  //0
+
+	console.log(parseInt('42 cats')); //42
+	console.log(Number('42 cats')); //MaM
+
+	console.log(Number('\t\v\r12.34\n')); //12.34
+
+	//object
+	console.log(Number({a:1}));  //NaN
+	console.log(Number([1, 2, 3]));  //NaN
+
+	Number(obj) 
+	// is equal to
+	if(typeof obj.valueOf() === 'object'){
+		Number(obj.toString());
+	} else {
+		Number(obj.valueOf());
+	}
+
+
+	//String()
+
+	
+ 
+	</script>
+</head>
+<body>
+
+</body>
+</html>
