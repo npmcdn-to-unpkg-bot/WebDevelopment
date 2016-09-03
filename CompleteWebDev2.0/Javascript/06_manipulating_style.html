@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulating Style</title>
+</head>
+<body>
+<p id="text">Hello World!</p>
+<button id="myButton">Change text</button>
+
+<p id="secondParagraph">Javascript is ...</p>
+
+<button id="secondButton">Append text</button>
+
+<p id="thirdParagraph"></p>
+
+<button id="thirdButton">Create text</button>
+
+<p id="moreText">This is more text!</p>
+
+<button id="styleText">Style Text</button>
+
+<script type="text/javascript">
+
+    document.getElementById("myButton").onclick = function () {
+        // alert("Button clicked!");
+        document.getElementById("text").innerHTML = "Hello Tianran!";
+    }
+
+    document.getElementById("secondButton").onclick = function () {
+        // alert("Button clicked!");
+        document.getElementById("secondParagraph").innerHTML =
+                "I think " + document.getElementById("secondParagraph").innerHTML + " awesome";
+    }
+
+    document.getElementById("thirdButton").onclick = function () {
+        document.getElementById("thirdParagraph").innerHTML = "<h1>I love Javascript!</h1>";
+    }
+
+    document.getElementById("styleText").onclick = function () {
+        // document.getElementById("moreText").style.display = "none";
+        // document.getElementById("moreText").style.color = "red";
+        document.getElementById("moreText").style.fontSize = "30px";
+    }
+
+
+</script>
+</body>
+</html>
