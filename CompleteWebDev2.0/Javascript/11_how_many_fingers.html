@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>If Statement</title>
+</head>
+<body>
+
+<p>How many fingers am I holding up?</p>
+<p><input type="text" id="guess"></p>
+<button id="checkGuess">Guess!</button>
+
+<script type="text/javascript">
+
+   // alert(Math.floor(Math.random() * 6));  //0-5
+    document.getElementById("checkGuess").onclick = function() {
+        var randomNumber = Math.floor(Math.random() * 6);
+        if (randomNumber == document.getElementById("guess").value) {
+            alert("Well done! You got it!");
+        } else {
+            alert("Nope! The number was " + randomNumber);
+        }
+
+    }
+    
+</script>
+</body>
+</html>
