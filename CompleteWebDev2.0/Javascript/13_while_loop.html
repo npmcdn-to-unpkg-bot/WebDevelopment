@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Loop</title>
+    <title>while Loop</title>
 </head>
 <body>
 
@@ -10,26 +10,18 @@
 
 <script type="text/javascript">
 
-
-    /*for (var i = 0; i < 5; i++){
-     alert(i);
-     }
-
-     for (var i = 5; i > 0; i--) {
-     alert(i);
-     }*/
-
+    var tweets = ["Hi everyone!", "I love cornflakes!", "Night night :)"];
     var tweetString = "";
 
-    var tweets = ["Hi everyone!", "I love cornflakes!", "Night night :)"];
+    var i = 0;
 
-    for(var i = 0; i < tweets.length; i++){
+    while ( i < tweets.length){
         tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+        i++;
     }
 
     document.getElementById("tweetDiv").innerHTML = tweetString;
     
-
 </script>
 </body>
 </html>
