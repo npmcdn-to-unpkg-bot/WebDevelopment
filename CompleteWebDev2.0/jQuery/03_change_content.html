@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>jquery Intro</title>
+    <title>Title</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!--<script src="jquery-3.1.0.min.js"></script>-->
     <style type="text/css">
         #circle {
             width: 150px;
@@ -21,27 +20,36 @@
         }
 
     </style>
-
 </head>
 <body>
-
 <div id="circle"></div>
+<p>This is some text </p>
+
 <div class="square"></div>
-<div class="square"></div>
+<iframe src="http://www.cnn.com"></iframe>
+
 
 <script type="text/javascript">
 
-    $("div").click(function(){
-        alert("a div was clicked!");
-    })
+    
 
     $("#circle").click(function(){
-        alert("circle was clicked!");
-    })
+        $("p").html("This text has changed!"); //change html content
+        alert($("p").html()); //get html content
 
-    $(".square").click(function(){
-        alert("square was clicked!");
-    })
+    });
+
+    $("#circle").hover(function(){
+        $("p").html("This text has changed!"); //change html content
+        alert($("p").html()); //get html content
+
+    });
+
+    $(".square").hover(function() {
+       $("iframe").attr("src", "http://chentianran.com");
+    });
+
+    
 
 </script>
 </body>
